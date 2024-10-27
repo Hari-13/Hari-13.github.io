@@ -1,44 +1,16 @@
-<!DOCTYPE html>
-<html>
- 
+---
+layout: default
+title: "Home"
+---
 
-<head>
-    <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+<h1>Welcome to My Personal Site</h1>
+<p>Explore my interests in <a href="/math/">Math</a>, <a href="/movies/">Movies</a>, and <a href="/adventures/">Adventures</a>.</p>
 
-</head>
- 
-
-<body>
- 
-    <div class="container">
-        <div class="heading">
-            <h1>Welcome to My Homepage</h1>
-        </div>
-        
-
-        <div class ="nav">
-            <ul>
-                <li> <a href="maths.html">Maths </a></li>
-                <li> <a href="movies.html">Movies</a></li>
-            </ul>
-        </div>
-
-        <div class ="main">
-              <p>
-        I am Hari Krishna Sahoo a student of Mathematics Department of IIT Bombay. This is my website mostly amalgam of all random things i experience which hopefully will make sense someday.
-            </p>
-    
-        </div>
-
-        <div class="footer">
-            &copy; Hari Krishna Sahoo
-
-        </div>
-    </div>
-
-
-  
-</body>
- 
-</html>
+<section>
+  <h2>Latest Posts</h2>
+  <ul>
+    {% for post in site.posts %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %d, %Y" }}</li>
+    {% endfor %}
+  </ul>
+</section>
