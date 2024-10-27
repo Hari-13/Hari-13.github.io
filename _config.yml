@@ -3,4 +3,9 @@ description: "Thoughts on Math, Movies, and Adventures"
 baseurl: "" # Leave blank for GitHub Pages
 url: "https://<your-username>.github.io/my-personal-blog"
 theme: minima
-author: <Hari>
+author: <your name>
+
+# Include posts from subdirectories
+collections:
+  posts:
+    output: true
