@@ -1,16 +1,25 @@
----
-layout: default
-title: "Home"
----
-
-<h1>Welcome to My Personal Site</h1>
-<p>Explore my interests in <a href="/math/">Maths</a>, <a href="/movies/">movies</a>, and <a href="/adventures/">other adventures</a>.</p>
-
-<section>
-  <h2>Latest Posts</h2>
-  <ul>
-    {% for post in site.posts %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %d, %Y" }}</li>
-    {% endfor %}
-  </ul>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="blogs/math.html">Math</a></li>
+                <li><a href="blogs/movies.html">Movies</a></li>
+                <li><a href="blogs/adventures.html">Adventures</a></li>
+            </ul>
+        </nav>
+    </header>
+    <footer>
+        <p>&copy; 2024 My Personal Website. All rights reserved.</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
