@@ -3,7 +3,7 @@ description: "Thoughts on Math, Movies, and Adventures"
 baseurl: "" # Leave blank for GitHub Pages
 url: "https://Hari-13.github.io/my-personal-blog"
 theme: minima
-author: <your name>
+author: Hari
 
 # Include posts from subdirectories
 collections:
