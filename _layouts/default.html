@@ -1,29 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }} - {{ site.title }}</title>
-  <link rel="stylesheet" href="{{ "/css/style.css" | relative_url }}">
+    <meta charset="UTF-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/css/custom.css">
 </head>
 <body>
-  <header>
-    <h1>{{ site.title }}</h1>
-    <nav>
-      <ul>
-        {% for link in site.nav_links %}
-          <li><a href="{{ link.link }}">{{ link.name }}</a></li>
-        {% endfor %}
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    {{ content }}
-  </main>
-
-  <footer>
-    <p>&copy; {{ site.title }} {{ "now" | date: "%Y" }}</p>
-  </footer>
+    <header>
+        <h1>{{ site.title }}</h1>
+        <nav>
+            <a href="{{ '/' | relative_url }}">Home</a> |
+            <a href="{{ '/math.html' | relative_url }}">Math</a> |
+            <a href="{{ '/movies.html' | relative_url }}">Movies</a> |
+            <a href="{{ '/adventures.html' | relative_url }}">Adventures</a>
+        </nav>
+    </header>
+    <div class="content">
+        {{ content }}
+    </div>
 </body>
 </html>
