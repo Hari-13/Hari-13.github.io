@@ -1,0 +1,11 @@
+---
+layout: default
+title: "Movies"
+---
+
+<h2>Movies Blog</h2>
+<ul>
+  {% for post in site.movies %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %d, %Y" }}</li>
+  {% endfor %}
+</ul>
