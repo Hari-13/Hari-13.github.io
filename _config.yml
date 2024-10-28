@@ -4,6 +4,8 @@ baseurl: "" # Leave blank for GitHub Pages
 url: "https://Hari-13.github.io/my-personal-blog"
 theme: minima
 author: Hari
+date_format: "%d %m %Y"
+
 
 # Include posts from subdirectories
 collections:
