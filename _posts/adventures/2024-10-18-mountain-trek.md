@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "My Mountain Trekking Adventure"
-date: 18-10-2024
+date: 2024-10-18
 categories: adventures
 image: /assets/images/mountain-trek.jpg
 ---
