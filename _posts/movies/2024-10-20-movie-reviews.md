@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Top 10 Movies of the Decade"
-date: 20-10-2024
+date: 2024-10-20
 categories: movies
 image: /assets/images/movie-reviews.jpg
 ---
