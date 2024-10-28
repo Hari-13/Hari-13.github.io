@@ -2,7 +2,7 @@ title: "My Personal Blog"
 description: "Thoughts on Math, Movies, and Adventures"
 baseurl: "" # Leave blank for GitHub Pages
 url: "https://Hari-13.github.io/my-personal-blog"
-theme: merlot
+theme: jekyll-theme-merlot
 author: Hari
 date_format: "%d %m %Y"
 
